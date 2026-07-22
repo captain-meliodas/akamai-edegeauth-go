@@ -310,7 +310,7 @@ The `Generate()` function is optimized for high-throughput environments. It uses
 | URL-based token (minimal) | 1,970,000 | 612 | 16 | 1,360 |
 | Parallel (12 cores) | 3,300,000 | 362 | 18 | 1,432 |
 
-At 3.3M ops/sec parallel, the library provides **14x headroom** above a 225K TPS target. The low allocation count (18 per call) minimizes GC pressure under sustained high-concurrency load.
+The library provides **3.3M ops/sec parallel**. The low allocation count (18 per call) minimizes GC pressure under sustained high-concurrency load.
 
 ## Concurrency
 
